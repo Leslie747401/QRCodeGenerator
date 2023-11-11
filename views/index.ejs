@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="flex-container">
+
+        <div class="image">
+            <% if (locals.New_QR) { %>
+                <img src= <%= New_QR %> height="300" width="300" alt="New_QR_Code">
+            <% } else { %>
+                <img src="./QR_Code.png" height="300" width="300" alt="QR_Code">
+            <% } %>
+        </div>
+        
+        <form class="form">
+            <h1>Generate QR Code</h1>
+            <input type="text" placeholder="&nbsp;Enter URL" pattern="https?://.*" title="Enter a URL starting with 'https://' or 'http://'" name="URL">
+            <button class="generate" type="submit" formaction="/submit" formmethod="post">Generate</button>
+            <button class="download" type="submit" formaction="/download" formmethod="get">Download</button>
+        </form>
+
+    </div>    
+    
+</body>
+</html>

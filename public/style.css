@@ -1,0 +1,99 @@
+body{
+    background-color: antiquewhite;
+}
+
+.flex-container{
+    display: flex;
+    padding: 200px 300px 200px 300px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image{
+    width: 18.75rem;
+    height: 18.75rem;
+    border-radius: 1rem;
+    border: 3px solid;
+    box-shadow: 15px 15px 0px 4px hsl(154, 100%, 55%),
+                17px 17px 0px 7px black ;
+}
+
+img{
+    border-radius: 1rem;
+}
+
+.form{
+    width: 17rem;
+    height: 10rem;
+    background-color: white;
+    border-radius: 3rem;
+    border: 2px solid;
+    padding: 50px;
+    box-shadow: 15px 15px 0px 4px rgb(26, 255, 156),
+                17px 17px 0px 6px black ;
+}
+
+/* hsl(154, 100%, 55%)  #91F291   #00DFA2   box-shadow: 15px 15px 0px 5px  */
+h1{
+    font-family: 'Lilita One', cursive;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+input{
+    font-size: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.generate{
+    border: 1px solid hsl(154, 100%, 55%);
+    background-color: hsl(154, 100%, 55%);
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.download{
+    color: white;
+    background-color: black;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+@media (max-width: 480px){
+
+    .flex-container{
+        width: auto;
+        flex-direction: column;
+        gap: 50px;
+        padding: 100px 202px 100px 202px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image{
+        width: 15.625rem;
+        height: 15.625rem;
+        margin-right: 20px;
+        margin-bottom: 30px;
+
+    }
+
+    .form{
+        margin-right: 20px;
+        padding: 30px;
+    }
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+
+}
