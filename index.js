@@ -8,7 +8,6 @@ const app = express();
 const port = 3000;
 var url_link , parsedUrl , domain , parts ,extractedDomain ;
 
-
 app.use(bodyParser.urlencoded({extended : true}));
 
 app.get("/", (req, res) => {
@@ -37,7 +36,6 @@ app.post("/submit" , (req,res) => {
   });
 
 });
-
 
 app.get("/download" , (req,res) => {
   
